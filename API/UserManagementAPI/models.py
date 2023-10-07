@@ -18,13 +18,14 @@ class UserType(models.Model):
      user_type_id = models.AutoField(primary_key=True)
      user_type = models.CharField(max_length=255, choices=USER_TYPE_CHOICES)
 
+     
 class UserManager(BaseUserManager):
 # 
     def create_user(self, mobile, password=None, **extra_fields):
         """Creates and saves a new user"""
         if not mobile:
             raise ValueError('Users must have an mobile number')
-        user = self.model(mobile=self(mobile), **extra_fields)
+        user = self.model( mobile = mobile, **extra_fields)
         user.set_password(password)
         user.save(using=self._db)
 
