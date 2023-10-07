@@ -3,4 +3,4 @@ from django.apps import AppConfig
 
 class ProductmanagementConfig(AppConfig):
     default_auto_field = 'django.db.models.BigAutoField'
-    name = 'CORE_AAPS.ProductManagement'
+    name = 'CORE_APPS.ProductManagement'
