@@ -39,7 +39,18 @@ THIRD_PARTY_APPS = [
 
 LOCAL_APPS = [
     "CORE_APPS.UserManagement",
+    "CORE_APPS.ProductManagement",
+    "CORE.APPS.OrderManagement",
+    "CORE_APPS.CommissionManagement",
     "API.UserManagementAPI",
+    "API.ProductManagementAPI",
+    "API.OrderManagementAPI"
+    "API.CommissionManagementAPI",
+
+
+
+
+
 ]
 
 
